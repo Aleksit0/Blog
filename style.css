@@ -5,13 +5,15 @@
 }
 
 body {
-  background: #4568DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  background: #948E99;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}  
 
 .header {
-  background-color: #000000;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   padding: 0;
   margin: 0;
@@ -28,11 +30,10 @@ h1 {
 .objava {
   width: 70%;
   background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.37);
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: white;
   font-family: Fira Code Light;
   text-align: justify;
@@ -43,7 +44,7 @@ h1 {
 .objava2 {
   width: 70%;
   background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.37);
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
   border-radius: 10px;
