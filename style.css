@@ -1,41 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
+  font-family: Poppins;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: #948E99;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background-color: #FEFBF3;
 }  
 
 .header {
-  background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  color: black;
   padding: 0;
   margin: 0;
 }
 
 h1 {
-  background-color: black;
   text-align: center;
   font-size: 1.5em;
-  font-family: Courier New;
 }
 
 
 .objava {
   width: 70%;
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.37);
-  backdrop-filter: blur( 20px );
-  -webkit-backdrop-filter: blur( 20px );
-  border-radius: 10px;
+  background: #1D976C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 5px;
   color: white;
-  font-family: Fira Code Light;
   text-align: justify;
   padding: 1rem;
   margin: auto;
@@ -43,14 +37,19 @@ h1 {
 
 .objava2 {
   width: 70%;
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba(100, 100, 100, 0.37);
-  backdrop-filter: blur( 20px );
-  -webkit-backdrop-filter: blur( 20px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color: #00A19D;
+  border-radius: 5px;
   color: white;
-  font-family: Fira Code Light;
+  text-align: justify;
+  padding: 1rem;
+  margin: auto;
+}
+
+.objava3 {
+  width: 70%;
+  background-color: #FFEF78;
+  border-radius: 5px;
+  color: white;
   text-align: justify;
   padding: 1rem;
   margin: auto;
