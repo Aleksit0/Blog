@@ -24,32 +24,27 @@ h1 {
 
 
 .objava {
+  color: black;
   width: 70%;
-  background: #1D976C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 5px;
-  color: white;
   text-align: justify;
   padding: 1rem;
   margin: auto;
 }
 
 .objava2 {
+  color: black;
   width: 70%;
-  background-color: #00A19D;
   border-radius: 5px;
-  color: white;
   text-align: justify;
   padding: 1rem;
   margin: auto;
 }
 
 .objava3 {
+  color: black;
   width: 70%;
-  background-color: #FFEF78;
   border-radius: 5px;
-  color: white;
   text-align: justify;
   padding: 1rem;
   margin: auto;
