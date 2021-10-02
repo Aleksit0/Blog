@@ -43,22 +43,28 @@ h1 {
   
 }
 
+.wrapper {
+  margin-top: 70px;
+}
+
 .objava {
-  background-color: #ffffff;
-  width: 70%;
-  border-radius: 5px;
+  background-color: rgba(179, 179, 179, 0.144);
+  width: 60%;
+  border-radius: 15px;
   text-align: justify;
-  padding: 1rem;
+  padding: 3rem;
   margin: auto;
+  margin-bottom: 60px;
 }
 
 .objava .naslov {
-  color: #f73558;
+  color: #252525;
+  margin-bottom: 13px;
   font-size: 2em;
 }
 
 .objava .text {
   color: #1d1d1f;
-  font-weight: bold;
+  font-size: 22px;
 }
 /*# sourceMappingURL=style.css.map */
