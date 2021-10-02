@@ -1,14 +1,13 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
   background-color: #ffffff;
-}
+}  
 
 .header {
   color: #ffffff;
@@ -23,7 +22,16 @@ h1 {
   font-size: 1.5em;
 }
 
+
 .objava {
+  .naslov {
+    color: #f73558;
+    font-size: 2em;
+  }
+  .text {
+    color: #1d1d1f;
+    font-weight: bold;
+  }
   background-color: #ffffff;
   width: 70%;
   border-radius: 5px;
@@ -31,14 +39,3 @@ h1 {
   padding: 1rem;
   margin: auto;
 }
-
-.objava .naslov {
-  color: #f73558;
-  font-size: 2em;
-}
-
-.objava .text {
-  color: #1d1d1f;
-  font-weight: bold;
-}
-/*# sourceMappingURL=style.css.map */
