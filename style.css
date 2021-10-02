@@ -1,5 +1,15 @@
+@font-face {
+  font-family: "Product Sans Reg";
+  src: url("fonts/Product_Sans_Regular.ttf");
+}
+
+@font-face {
+  font-family: "Product Sans Bold";
+  src: url("fonts/Product_Sans_Bold.ttf");
+}
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Product Sans Reg, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
