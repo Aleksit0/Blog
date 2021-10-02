@@ -22,15 +22,25 @@ body {
 
 .header {
   color: #ffffff;
-  background-color: #1e1e1e;
+  /* background-color: #1e1e1e; */
   font-size: .8em;
   padding: 5px;
   margin: 0;
+  height: 45vh;
+  background-image: url(img/bg-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
-  text-align: center;
-  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  padding: 150px;
+  
 }
 
 .objava {
