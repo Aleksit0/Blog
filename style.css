@@ -1,70 +1,76 @@
 @font-face {
-  font-family: "Product Sans Reg";
-  src: url("fonts/Product_Sans_Regular.ttf");
+	font-family: 'Product Sans Reg';
+	src: url('fonts/Product_Sans_Regular.ttf');
 }
 
 @font-face {
-  font-family: "Product Sans Bold";
-  src: url("fonts/Product_Sans_Bold.ttf");
+	font-family: 'Product Sans Bold';
+	src: url('fonts/Product_Sans_Bold.ttf');
 }
 
 * {
-  font-family: Product Sans Reg, sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	font-family: Product Sans Reg, sans-serif;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
-.header {
-  color: #ffffff;
-  /* background-color: #1e1e1e; */
-  font-size: .8em;
-  padding: 5px;
-  margin: 0;
-  height: 45vh;
-  background-image: url(img/bg-dark.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+header {
+	color: #ffffff;
+	/* background-color: #1e1e1e; */
+	height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(img/bg-dark.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 7rem;
-  padding: 150px;
-  
+header h1 {
+	text-align: center;
+	font-size: 7rem;
+	padding: 150px;
 }
 
 .wrapper {
-  margin-top: 70px;
+	margin-top: 70px;
 }
 
 .objava {
-  background-color: rgba(179, 179, 179, 0.144);
-  width: 60%;
-  border-radius: 15px;
-  text-align: justify;
-  padding: 3rem;
-  margin: auto;
-  margin-bottom: 60px;
+	background-color: rgba(179, 179, 179, 0.144);
+	width: 90%;
+	max-width: 800px;
+	border-radius: 15px;
+	text-align: justify;
+	padding: 3rem;
+	margin: auto;
+	margin-bottom: 60px;
 }
 
 .objava .naslov {
-  color: #252525;
-  margin-bottom: 13px;
-  font-size: 2em;
+	color: #252525;
+	margin-bottom: 13px;
+	font-size: 2em;
 }
 
 .objava .text {
-  color: #1d1d1f;
-  font-size: 22px;
+	color: #1d1d1f;
+	font-size: 22px;
 }
+
+@media screen and (max-width: 768px) {
+	header h1 {
+		font-size: 5rem;
+	}
+}
+
 /*# sourceMappingURL=style.css.map */
