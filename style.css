@@ -8,6 +8,18 @@
 	src: url('fonts/Product_Sans_Bold.ttf');
 }
 
+:root {
+	--body-bg: #fff;
+	--blog-title-clr: #252525;
+	--blog-text-clr: #1d1d1f;
+}
+
+.darkmode {
+	--body-bg: #1c1c1c;
+	--blog-title-clr: #d6d6d6;
+	--blog-text-clr: #f2f2f2;
+}
+
 * {
 	font-family: Product Sans Reg, sans-serif;
 	-webkit-box-sizing: border-box;
@@ -17,7 +29,7 @@
 }
 
 body {
-	background-color: #ffffff;
+	background-color: var(--body-bg);
 }
 
 header {
@@ -57,13 +69,13 @@ header h1 {
 }
 
 .objava .naslov {
-	color: #252525;
+	color: var(--blog-title-clr);
 	margin-bottom: 13px;
 	font-size: 2em;
 }
 
 .objava .text {
-	color: #1d1d1f;
+	color: var(--blog-text-clr);
 	font-size: 22px;
 }
 
@@ -77,9 +89,9 @@ header h1 {
 	display: inline-block;
 	width: 80px;
 	height: 80px;
-  }
-  .lds-dual-ring:after {
-	content: " ";
+}
+.lds-dual-ring:after {
+	content: ' ';
 	display: block;
 	width: 64px;
 	height: 64px;
@@ -88,18 +100,18 @@ header h1 {
 	border: 6px solid rgb(255, 255, 255);
 	border-color: rgb(255, 255, 255) transparent rgb(255, 255, 255) transparent;
 	animation: lds-dual-ring 1.2s linear infinite;
-  }
-  @keyframes lds-dual-ring {
+}
+@keyframes lds-dual-ring {
 	0% {
-	  transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
 	100% {
-	  transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
+}
 
-  .loader-wrapper {
-	width: 100%;  
+.loader-wrapper {
+	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -108,6 +120,70 @@ header h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  }
-  
+}
+
+/* code for toggle switch */
+
+.switch > input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.switch {
+	position: fixed;
+	display: block;
+	width: 70px;
+	height: 34px;
+	top: 20px;
+	right: 30px;
+	z-index: 100;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	background-color: #dfdfdf;
+	height: 100%;
+	width: 100%;
+	border-radius: 70px;
+	transition: background-color 350ms ease-in-out;
+}
+
+.slider::before {
+	content: '';
+	height: 27px;
+	width: 27px;
+	background-color: #7e7e7e;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 4px;
+	border-radius: 50%;
+	transition: transform 350ms ease-in-out;
+	z-index: 2;
+}
+
+#darkmode-toggle:checked + .slider {
+	background-color: #545454;
+}
+
+#darkmode-toggle:checked + .slider::before {
+	transform: translate(130%, -50%);
+	background-color: #bdbdbd;
+}
+
+.slider::after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: 90% 50%;
+	left: 0;
+	z-index: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
