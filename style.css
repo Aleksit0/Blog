@@ -1,189 +1,67 @@
-@font-face {
-	font-family: 'Product Sans Reg';
-	src: url('fonts/Product_Sans_Regular.ttf');
-}
-
-@font-face {
-	font-family: 'Product Sans Bold';
-	src: url('fonts/Product_Sans_Bold.ttf');
-}
-
-:root {
-	--body-bg: #fff;
-	--blog-title-clr: #252525;
-	--blog-text-clr: #1d1d1f;
-}
-
-.darkmode {
-	--body-bg: #1c1c1c;
-	--blog-title-clr: #d6d6d6;
-	--blog-text-clr: #f2f2f2;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
 
 * {
-	font-family: Product Sans Reg, sans-serif;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	background-color: var(--body-bg);
-}
-
-header {
-	color: #ffffff;
-	/* background-color: #1e1e1e; */
-	height: 45vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	background-image: url(img/bg-dark.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
-
-header h1 {
-	text-align: center;
-	font-size: 7rem;
-	padding: 150px;
-}
-
-.wrapper {
-	margin-top: 70px;
+  overflow: hidden;
 }
 
 .objava {
-	background-color: rgba(179, 179, 179, 0.144);
-	width: 90%;
-	max-width: 800px;
-	border-radius: 15px;
-	text-align: justify;
-	padding: 3rem;
-	margin: auto;
-	margin-bottom: 60px;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(25, 25, 26);
 }
 
 .objava .naslov {
-	color: var(--blog-title-clr);
-	margin-bottom: 13px;
-	font-size: 2em;
+  font-family: 'Bebas Neue';
+  color: rgb(25, 25, 26);
+  font-size: clamp(40px, 1vw, 70px);
+  font-weight: bold;
 }
 
 .objava .text {
-	color: var(--blog-text-clr);
-	font-size: 22px;
+  font-family: Hind Siliguri;
+  color: rgb(25, 25, 26);
+  font-size: clamp(20px, 1vw, 70px);
 }
 
-@media screen and (max-width: 768px) {
-	header h1 {
-		font-size: 5rem;
-	}
+.navbar {
+  font-family: 'Bebas Neue';
+  font-size: clamp(20px, 1vw, 70px);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgb(23,10,241);
+  background: linear-gradient(90deg, rgba(23,10,241,1) 0%, rgba(28,28,203,1) 54%, rgba(0,9,255,1) 100%);
 }
 
-.lds-dual-ring {
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-}
-.lds-dual-ring:after {
-	content: ' ';
-	display: block;
-	width: 64px;
-	height: 64px;
-	margin: 8px;
-	border-radius: 50%;
-	border: 6px solid rgb(255, 255, 255);
-	border-color: rgb(255, 255, 255) transparent rgb(255, 255, 255) transparent;
-	animation: lds-dual-ring 1.2s linear infinite;
-}
-@keyframes lds-dual-ring {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+li {
+  float: left;
 }
 
-.loader-wrapper {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #242f3f;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* code for toggle switch */
-
-.switch > input {
-	opacity: 0;
-	width: 0;
-	height: 0;
+li a:hover:not(.active) {
+  background-color: rgb(25, 25, 26);
 }
 
-.switch {
-	position: fixed;
-	display: block;
-	width: 70px;
-	height: 34px;
-	top: 20px;
-	right: 30px;
-	z-index: 100;
-}
-
-.slider {
-	position: absolute;
-	cursor: pointer;
-	top: 0;
-	left: 0;
-	background-color: #dfdfdf;
-	height: 100%;
-	width: 100%;
-	border-radius: 70px;
-	transition: background-color 350ms ease-in-out;
-}
-
-.slider::before {
-	content: '';
-	height: 27px;
-	width: 27px;
-	background-color: #7e7e7e;
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	left: 4px;
-	border-radius: 50%;
-	transition: transform 350ms ease-in-out;
-	z-index: 2;
-}
-
-#darkmode-toggle:checked + .slider {
-	background-color: #545454;
-}
-
-#darkmode-toggle:checked + .slider::before {
-	transform: translate(130%, -50%);
-	background-color: #bdbdbd;
-}
-
-.slider::after {
-	content: '';
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	background-repeat: no-repeat;
-	background-position: 90% 50%;
-	left: 0;
-	z-index: 1;
-}
-
+/*color: #f73558;*/
 /*# sourceMappingURL=style.css.map */
